@@ -9,6 +9,8 @@ h1, h2, p, ul, li {
 h1{
   text-align: center;
   color: #FFFFFF;
+  font-size: 50px;
+  font-weight:bolder;
 }
 
 ul.header li {
@@ -26,6 +28,13 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+
+
+ul.footer {
+    background-color: #DB8A74;
+  padding: 5px;
+}
+
 ul.pretty li {
   display: inline;
   list-style-type: none;
@@ -60,9 +69,10 @@ table {
 }
 
 th, td {
-  padding: 8px;
+  padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
 th {
@@ -84,7 +94,7 @@ th {
   font-family: sans-serif;
   background-color: #FFFFFF; 
   border: none;
-  color: #FFFFFF;
+  color: #0000;
   padding: 20px;
   text-align: left;
   text-decoration: none;
@@ -100,4 +110,69 @@ img {
   border-radius: 4px;
   padding: 5px;
   width: 100px;
+}
+
+p {
+  color: #DB8A74;
+
+}
+
+table {
+  width: 100%;
+  border-spacing: 5px;
+}
+
+h3, h4 {
+  color: #FFFFFF;
+}
+
+
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
 }
