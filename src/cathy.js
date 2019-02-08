@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import { render } from "react-dom";
 import Keyboard from "react-simple-keyboard";
@@ -56,13 +57,13 @@ state = {
           </ul>
       <div class="container">
   <img src="/w3images/bandmember.jpg" alt="Avatar"/>
-  <p>Hello. How are you today?</p>
+  <p>Hello. What's wrong!?</p>
   <span class="time-right">11:00</span>
 </div>
 <div>
         <input
           value={this.state.input}
-          placeholder={"Start messaging your friend!"}
+          placeholder={"Start checking up on your friend!"}
           onChange={e => this.onChangeInput(e)}
         />
         <Keyboard
